@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 
 def SIR(N,I0,R0,beta,gamma,days=105):#105 days-15 weeks
   '''
+  Will display graph with values of S,I,R over the specified time period as fractions with 
+  respect to N assuming constant beta and gamma as provided values.
+  
   N - Total Population
   I0 - Initial No. of infected people
   R0 - Initial No. of Recovered 
@@ -45,4 +48,3 @@ def SIR(N,I0,R0,beta,gamma,days=105):#105 days-15 weeks
   for spine in ('top', 'right', 'bottom', 'left'):
       ax.spines[spine].set_visible(False)
   plt.show()
-  return dIdt
